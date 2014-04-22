@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Chattr.Server
 {
-    public delegate void OnData(byte[] data);
+    public delegate void OnData(IDataIdentity id, byte[] data);
 
     public interface IListener : IRunnable
     {
